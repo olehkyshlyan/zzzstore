@@ -1,0 +1,693 @@
+
+body
+{
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, Geneva, Helvetica, sans-serif;
+  font-size: 12px;
+  background-color: rgb(255,255,240); /* color Ivory */
+}
+
+#mcont
+{
+  position: relative;
+  width: 1000px;
+  padding-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(255,255,240); /* color Ivory */
+  border: 1px solid rgb(190,190,190); /* color Grey */
+}
+
+#notallowtobuy
+{
+  position: relative;
+  display: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 30px;
+  padding-top: 5px;
+  margin: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 130%;
+  background-color: rgb(255,160,122); /* color LightSalmon */
+}
+
+#msgship
+{
+  position: relative;
+  display: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 30px;
+  padding-top: 5px;
+  margin: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 130%;
+  background-color: rgb(255,160,122); /* color LightSalmon */
+}
+
+#sentorder
+{
+  position: relative;
+  display: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 30px;
+  padding-top: 5px;
+  margin: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 130%;
+  background-color: rgb(255,160,122); /* color LightSalmon */
+}
+
+#emptycart
+{
+  position: relative;
+  display: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 30px;
+  padding-top: 5px;
+  margin: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 130%;
+  background-color: rgb(255,160,122); /* color LightSalmon */
+}
+
+#firstBlock
+{
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 100px;
+  margin: 10px;
+  background-color: rgb(255,248,220); /* color Cornsilk */
+}
+
+#cart
+{
+  position: absolute;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  top: 0px;
+  right: 0px;
+  width: 200px;
+  height: 100px;
+  font-size: 120%;
+}
+
+#wcart
+{
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 25px;
+  padding-top: 3px;
+  text-align: center;
+  font-size: 120%;
+  font-weight: bold;
+  background-color: rgb(255,238,178); /* color Cornsilk | Saturation 30%  */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#wcart:hover
+{
+  color: rgb(0,0,255); /* color Blue */
+  background-color: rgb(255,228,128); /* color Cornsilk | Saturation 50% */
+}
+
+#cproducts
+{
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 20px;
+  margin-top: 5px;
+  padding-top: 4px;
+  background-color: rgb(255,238,178); /* color Cornsilk | Saturation 30%  */
+}
+
+#camount
+{
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 20px;
+  margin-top: 5px;
+  padding-top: 4px;
+  background-color: rgb(255,238,178); /* color Cornsilk | Saturation 30%  */
+}
+
+#cwallet
+{
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 20px;
+  margin-top: 5px;
+  padding-top: 4px;
+  background-color: rgb(255,238,178); /* color Cornsilk | Saturation 30%  */
+}
+
+#bcart
+{
+  position: relative;
+  display: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 500px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  border: 1px solid rgb(190,190,190); /* color Grey */
+  background-color: rgb(255,248,220); /* color Cornsilk */
+}
+
+#bcFirstBlock
+{
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 4px;
+  text-align: center;
+}
+
+#bcTitle
+{
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#bcCloseBt
+{
+  position: absolute;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  top: 2px;
+  right: 2px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+#bcSecondBlock
+{
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  min-height: 40px;
+  max-height: 180px;
+  padding-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-top: 1px solid rgb(190,190,190); /* color Grey */
+  border-bottom: 1px solid rgb(190,190,190); /* color Grey */
+  overflow: auto;
+}
+
+.bcGoods
+{
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 30px;
+  margin-top: 5px;
+  background-color: rgb(255,255,240); /* color Ivory */
+  background-color: rgb(255,246,205); /* color Cornsilk | Saturation 20% */
+}
+
+.bcwimg
+{
+  position: relative;
+  float: left;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 26px;
+  border: 1px solid rgb(232,232,232); /* color gray91 */
+}
+
+#bcimg
+{
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  max-width: 28px;
+  max-height: 28px;
+  border: none;
+  vertical-align: middle;
+}
+
+.bcPrDetails
+{
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 30px;
+  margin-left: 50px;
+}
+
+.bcProdName
+{
+  position: absolute;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  left: 0px;
+  top: 0px;
+  height: 30px;
+  width: 100px;
+  padding-top: 7px;
+}
+
+.bcDetPlus
+{
+  position: absolute;
+  display: inline-block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  left: 110px;
+  top: 0px;
+  height: 30px;
+  width: 30px;
+  padding-top: 5px;
+  text-align: center;
+  font-size: 16px;
+  background-color: rgb(255,238,178); /* color Cornsilk | Saturation 30% */
+  border-radius: 5px;
+}
+
+.bcDetPlus:hover
+{
+  background-color: rgb(255,228,128); /* color Cornsilk | Saturation 50% */
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.bcDetNum
+{
+  position: absolute;
+  display: inline-block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  left: 150px;
+  top: 0px;
+  height: 30px;
+  width: 30px;
+  padding-top: 5px;
+  text-align: center;
+  font-size: 16px;
+  background-color: rgb(255,238,178); /* color Cornsilk | Saturation 30% */
+  border-radius: 5px;
+}
+
+.bcDetMinus
+{
+  position: absolute;
+  display: inline-block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  left: 190px;
+  top: 0px;
+  height: 30px;
+  width: 30px;
+  padding-top: 4px;
+  text-align: center;
+  font-size: 16px;
+  background-color: rgb(255,238,178); /* color Cornsilk | Saturation 30% */
+  border-radius: 5px;
+}
+
+.bcDetMinus:hover
+{
+  background-color: rgb(255,228,128); /* color Cornsilk | Saturation 50% */
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#bcemptycart
+{
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 50px;
+  text-align: center;
+  font-size: 120%;
+  margin-top: 5px;
+  padding-top: 15px;
+  background-color: rgb(255,255,240); /* color Ivory */
+}
+
+#transport
+{
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 20px;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+#transSelect
+{
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 20px;
+}
+
+#wpay
+{
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 30px;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+#paybt
+{
+  position: absolute;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  top: 0px;
+  right: 0px;
+  height: 30px;
+  width: 100px;
+  padding-top: 7px;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid rgb(190,190,190); /* color Grey */
+  background-color: rgb(255,238,178); /* color Cornsilk | Saturation 30%  */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#paybt:hover
+{
+  color: rgb(0,0,255); /* color Blue */
+  background-color: rgb(255,228,128); /* color Cornsilk | Saturation 50% */
+}
+
+#secondBlock
+{
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.goods
+{
+  position: absolute;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  top: 0px;
+  width: 230px;
+  height: 300px;
+  border: 1px solid rgb(190,190,190); /* color Grey */
+  background-color: rgb(255,255,240); /* color Ivory */
+}
+
+#apple
+{
+  left: 0px;
+}
+
+#beer
+{
+  left: 250px;
+}
+
+#water
+{
+  left: 500px;
+}
+
+#cheese
+{
+  left: 750px;
+}
+
+.name
+{
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 180px;
+  height: 20px;
+  margin-left: 24px;
+  margin-top: 10px;
+  padding-top: 2px;
+  text-align: center;
+  font-size: 120%;
+  font-weight: bold;
+  background-color: rgb(255,248,220); /* color Cornsilk */
+  border-radius: 5px;
+}
+
+.wimg
+{
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 180px;
+  height: 180px;
+  margin-left: 24px;
+  margin-top: 10px;
+  text-align: center;
+  line-height: 178px;
+}
+
+.dimg
+{
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  max-width: 180px;
+  max-height: 180px;
+  border: none;
+  vertical-align: middle;
+}
+
+.gchars
+{
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 180px;
+  height: 20px;
+  margin-left: 24px;
+  margin-top: 10px;
+  background-color: rgb(255,255,240); /* color Ivory */
+}
+
+.price
+{
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 70px;
+  height: 20px;
+  padding-top: 2px;
+}
+
+.cart
+{
+  position: absolute;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  top: 0px;
+  right: 0px;
+  width: 80px;
+  height: 20px;
+  padding-top: 2px;
+  text-align: center;
+  font-weight: bold;
+  background-color: rgb(255,228,115); /* color Cornsilk | Saturation 55% */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.rating
+{
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 180px;
+  height: 20px;
+  margin-left: 24px;
+  margin-top: 10px;
+}
+
+.rate
+{
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 50px;
+  height: 20px;
+  padding-top: 3px;
+}
+
+.rtstar
+{
+  position: absolute;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  padding-top: 2px;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.rtstar:hover
+{
+  opacity: 1;
+}
+
+.star1
+{
+  left: 40px;
+}
+
+.star2
+{
+  left: 60px;
+}
+
+.star3
+{
+  left: 80px;
+}
+
+.star4
+{
+  left: 100px;
+}
+
+.star5
+{
+  left: 120px;
+}
+
+.rtresult
+{
+  position: absolute;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  top: 0px;
+  left: 150px;
+  width: 20px;
+  height: 20px;
+  padding-top: 3px;
+  text-align: center;
+}
+
+#fbeer
+{
+  position: absolute;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  left: 250px;
+  top: 0px;
+  width: 230px;
+  height: 250px;
+  border: 1px solid rgb(190,190,190); /* color Grey */
+  background-color: rgb(255,238,178); /* color Cornsilk | Saturation 30%  */
+}
+
+#fwater
+{
+  position: absolute;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  left: 500px;
+  top: 0px;
+  width: 230px;
+  height: 250px;
+  border: 1px solid rgb(190,190,190); /* color Grey */
+  background-color: rgb(255,238,178); /* color Cornsilk | Saturation 30%  */
+}
+
+#fcheese
+{
+  position: absolute;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  left: 750px;
+  top: 0px;
+  width: 230px;
+  height: 250px;
+  border: 1px solid rgb(190,190,190); /* color Grey */
+  background-color: rgb(255,238,178); /* color Cornsilk | Saturation 30%  */
+}
